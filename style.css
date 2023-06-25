@@ -1,0 +1,45 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:ital,wght@1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    color:white;
+}
+.container{
+    width: 100vw;
+    height:100vh;
+    background-color: blue;
+    position: relative;
+}
+.box{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}
+.spin{
+    height: 50px;
+    width: 50px;
+    border:4px solid skyblue;
+    border-top:4px solid white;
+    border-radius: 50%;
+    margin-left: 35%;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    transition-property: transform;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
